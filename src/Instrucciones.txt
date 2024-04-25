@@ -1,0 +1,43 @@
+### Problema: Validación de Contraseña
+
+Escribe un programa en Java que valide contraseñas ingresadas por el usuario. Una contraseña válida debe cumplir con los siguientes requisitos:
+
+1. Debe tener al menos 8 caracteres.
+2. Debe contener al menos una letra mayúscula y una letra minúscula.
+3. Debe contener al menos un número.
+
+El programa debe realizar las siguientes acciones:
+
+1. Leer una contraseña ingresada por el usuario.
+2. Validar la contraseña según los criterios mencionados.
+3. Si la contraseña es válida, imprimir "Contraseña válida".
+4. Si la contraseña es inválida, imprimir un mensaje indicando el problema específico (por ejemplo, "La contraseña debe contener al menos 8 caracteres").
+
+Aquí hay algunas sugerencias sobre cómo puedes implementar este problema:
+
+#### Métodos útiles para convertir un String en un arreglo concatenando String:
+
+Puedes utilizar el método `split()` de la clase `String` para dividir una cadena en un arreglo de cadenas. Por ejemplo:
+
+java String[] arreglo = cadena.split("");
+
+#### Inmutabilidad:
+
+Recuerda que los objetos `String` son inmutables en Java, lo que significa que no puedes modificarlos directamente. Debes crear nuevos objetos `String` con los cambios necesarios. Por ejemplo:
+
+java String nuevaCadena = cadenaOriginal.concat("nuevo texto");
+
+#### Validar un String:
+
+Puedes usar métodos como `matches()` para validar una cadena usando expresiones regulares. Por ejemplo:
+
+java boolean esValida = cadena.matches("[a-zA-Z0-9]+");ñ
+
+#### Métodos importantes del objeto String:
+
+- `length()`: Devuelve la longitud de la cadena.
+- `charAt(int index)`: Devuelve el carácter en el índice especificado.
+- `toUpperCase()`: Devuelve una nueva cadena con todos los caracteres en mayúscula.
+- `toLowerCase()`: Devuelve una nueva cadena con todos los caracteres en minúscula.
+
+Con estos conceptos en mente, puedes comenzar a implementar la solución al problema. ¿Te gustaría que te ayude con el código completo?
